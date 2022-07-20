@@ -91,10 +91,10 @@ local FirstDropdown = cPage.AddDropdown("Spawn Car", {
 end)
 local FasdfLabel = cPage.AddLabel("State Troopers")
 local FirstDropdown = cPage.AddDropdown("Spawn Car", {
-    "Shitty ass police car",
+    "Baron",
     "Albany"
     }, function(Value)
-        if Value == 'Shitty ass police car' then
+        if Value == 'Baron' then
             Value = 'sheriff'
         elseif Value == 'Albany' then
             Value = 'sheriff2'
@@ -110,7 +110,7 @@ local FirstDropdown = gPage.AddDropdown("Spawn Car", {
     "Caldera"
     }, function(Value)
         if Value == 'Caldera' then
-            Value = 'sheriff3'
+            Value = 'police1'
         end
         local args = {
             [1] = Value
