@@ -6,6 +6,7 @@ local cPage = MainUI.AddPage("Vehicle")
 local sPage = MainUI.AddPage("Guns")
 local tPage = MainUI.AddPage("Teleports")
 local mPage = MainUI.AddPage("Misc")
+local gPage = MainUI.AddPage("Vehicle2")
 _G.dela = false
 
 local function dropoff()
