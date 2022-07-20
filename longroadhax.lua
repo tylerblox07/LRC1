@@ -110,7 +110,7 @@ local FirstDropdown = gPage.AddDropdown("Spawn Car", {
     "Caldera"
     }, function(Value)
         if Value == 'Caldera' then
-            Value = 'police1'
+            Value = 'police0'
         end
         local args = {
             [1] = Value
