@@ -77,7 +77,8 @@ end)
 local FirstLabel = cPage.AddLabel("Citzen Cars")
 local FirstDropdown = cPage.AddDropdown("Spawn Car", {
     "silver",
-    "commander"
+    "commander",
+    "saber"		
     }, function(Value)
         local args = {
             [1] = Value
