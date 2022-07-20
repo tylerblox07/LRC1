@@ -105,15 +105,12 @@ local FirstDropdown = cPage.AddDropdown("Spawn Car", {
         
         game:GetService("ReplicatedStorage").SpawnCar:FireServer(unpack(args))
 end)
-local CasdcLabel = cPage.AddLabel("Alamo Police")
-local FirstDropdown = cPage.AddDropdown("Spawn Car", {
-    "Baron",
-    "Albany"
+local FirstLabel = gPage.AddLabel("Alamo Police")
+local FirstDropdown = gPage.AddDropdown("Spawn Car", {
+    "caldera"
     }, function(Value)
-        if Value == 'Baron' then
-            Value = 'sheriff'
-        elseif Value == 'Albany' then
-            Value = 'sheriff2'
+        if Value == 'caldera' then
+            Value = 'police'
         end
         local args = {
             [1] = Value
