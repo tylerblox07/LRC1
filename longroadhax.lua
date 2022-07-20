@@ -105,6 +105,21 @@ local FirstDropdown = cPage.AddDropdown("Spawn Car", {
         
         game:GetService("ReplicatedStorage").SpawnCar:FireServer(unpack(args))
 end)
+local GasdfLabel = cPage.AddLabel("Alamo Police")
+local FirstDropdown = cPage.AddDropdown("Spawn Car", {
+    "Baron",
+    "Albany"
+    }, function(Value)
+        if Value == 'Baron' then
+            Value = 'sheriff'
+        elseif Value == 'Albany' then
+            Value = 'sheriff2'
+        end
+        local args = {
+            [1] = Value
+        }
+        
+        game:GetService("ReplicatedStorage").SpawnCar:FireServer(unpack(args))
 
 local SecondButton = sPage.AddButton("M1911 $5500", function()
     for i, v in pairs(game.Workspace:GetDescendants()) do
